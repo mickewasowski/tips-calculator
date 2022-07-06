@@ -220,3 +220,59 @@ input[type="number"]:focus {
     background-color: hsl(173, 61%, 77%);
     cursor: pointer;
 }
+
+@media (min-width: 320px) and (max-width: 900px) {
+
+    #logo-container {
+        margin: 1rem 0;
+        padding-top: 4rem;
+    }
+
+    .page-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    #left-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #left-container,
+    #right-container {
+        width: 90%;
+        height: auto;
+    }
+
+    #percentage-btns>button,
+    #percentage-btns>input[type="number"].input-percent {
+        width: 45%;
+    }
+
+    #left-container>div>label {
+        display: block;
+    }
+
+    #left-container>div>label#error-label {
+        font-size: 1rem;
+        float: none;
+    }
+
+    #right-container h1 {
+        font-size: 2rem;
+    }
+
+    #reset-container {
+        transform: none;
+        margin-bottom: 1rem;
+    }
+
+    #reset-container>button {
+        height: auto;
+        padding: 0.6rem 0;
+    }
+}
