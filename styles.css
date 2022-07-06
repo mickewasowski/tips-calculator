@@ -276,3 +276,51 @@ input[type="number"]:focus {
         padding: 0.6rem 0;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .page-container {
+        width: 95%;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    #left-container {
+        display: flex;
+        flex-direction: column;
+        /* row-gap: 1rem; */
+    }
+
+    #left-container,
+    #right-container {
+        height: 95%;
+    }
+
+    #percentage-btns {
+        row-gap: 0.5rem;
+    }
+
+    #percentage-btns>button,
+    #percentage-btns>input[type="number"].input-percent {
+        width: 30%;
+        height: auto;
+    }
+
+    #right-container {
+        justify-content: space-around;
+    }
+
+    #right-container h1 {
+        margin: 0;
+    }
+
+    #reset-container {
+        transform: none;
+        /* padding-bottom: 1rem; */
+    }
+
+    #reset-container>button {
+        height: auto;
+        padding: .5rem 0;
+    }
+}
