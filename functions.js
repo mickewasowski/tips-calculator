@@ -22,6 +22,9 @@ function selectPercentage() {
 
     let isClicked = parent.find(x => x.id !== '');
 
+    let resetBtn = document.getElementById('reset-btn');
+    resetBtn.classList.add('active-reset');
+
     if (isClicked === undefined && currentBtn.tagName !== 'INPUT') {
         currentBtn.id = "selected-btn";
         let inputField = document.getElementsByClassName('input-percent')[0];
@@ -102,4 +105,7 @@ function resetForm() {
 
     let totalAmountPerson = document.getElementById('total-per-person');
     totalAmountPerson.innerHTML = '$ 0.00';
+
+    let resetBtn = document.getElementById('reset-btn');
+    resetBtn.classList.remove('active-reset');
 }
