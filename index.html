@@ -41,7 +41,7 @@
           <button onclick="selectPercentage()">15%</button>
           <button onclick="selectPercentage()">25%</button>
           <button onclick="selectPercentage()">50%</button>
-          <button onclick="selectPercentage()">Custom</button>
+          <input type="number" placeholder="Custom" onchange="selectPercentage()" class="input-percent"></input>
         </div>
       </div>
       <div id="people-container">
@@ -68,7 +68,7 @@
         <h1 id="total-per-person">$ 0.00</h1>
       </div>
       <div id="reset-container">
-        <button>Reset</button>
+        <button onclick="resetForm()">Reset</button>
       </div>
     </div>
   </div>

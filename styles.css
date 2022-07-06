@@ -72,6 +72,12 @@ input[type="number"]:focus {
     margin-top: 0.5rem;
 }
 
+#input-container>div:hover,
+#people-container>div:hover {
+    outline: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
 #tip-container {
     margin-top: .5rem;
     height: 60%;
@@ -97,6 +103,32 @@ input[type="number"]:focus {
     font-weight: 700;
 }
 
+#percentage-btns>input[type="number"].input-percent {
+    display: inline-block;
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+}
+
+#percentage-btns>input[type="number"].input-percent:hover {
+    outline: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+#percentage-btns>input[type="number"].input-percent:focus {
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
+#percentage-btns>input[type="number"].selected-input {
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
 #percentage-btns button:nth-child(1),
 #percentage-btns button:nth-child(2),
 #percentage-btns button:nth-child(3),
@@ -114,6 +146,12 @@ input[type="number"]:focus {
 #percentage-btns>#selected-btn {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
+}
+
+#percentage-btns>button:hover {
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 
 #left-container>div>label#error-label {
@@ -172,4 +210,9 @@ input[type="number"]:focus {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+#reset-container>button:hover {
+    background-color: hsl(173, 61%, 77%);
+    cursor: pointer;
 }
