@@ -97,11 +97,6 @@ input[type="number"]:focus {
     font-weight: 700;
 }
 
-#percentage-btns>button:focus {
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-}
-
 #percentage-btns button:nth-child(1),
 #percentage-btns button:nth-child(2),
 #percentage-btns button:nth-child(3),
@@ -114,6 +109,21 @@ input[type="number"]:focus {
 #percentage-btns button:nth-child(6) {
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
+}
+
+#percentage-btns>#selected-btn {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#left-container>div>label#error-label {
+    font-size: 1rem;
+    float: right;
+    color: hsl(13, 70%, 60%);
+}
+
+#people-container>div.error {
+    outline: 2px solid hsl(13, 70%, 60%);
 }
 
 #right-container {
